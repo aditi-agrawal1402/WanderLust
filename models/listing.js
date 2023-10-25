@@ -11,9 +11,8 @@ const listingSchema = new Schema({
     location:String,
     price:Number,
     image:{
-        type:String,
-        default: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxVbWmF65TzywyOdjvO7vOFtoHXcEqidNwA&usqp=CAU",
-        set: (v) => v===""? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxVbWmF65TzywyOdjvO7vOFtoHXcEqidNwA&usqp=CAU" : v
+        url:String,
+        filename: String
     },
     country: String,
     reviews:[
